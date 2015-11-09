@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nshinyServer(\n  function(input, output) {\n    output$oid1 <- renderPrint({input$id1})\n    output$oid2 <- renderPrint({input$id2})\n    output$odate <- renderPrint({input$date})\n  }\n)",
+    "created" : 1446860468444.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3174373866",
+    "id" : "4DD2C56A",
+    "lastKnownWriteTime" : 1446861206,
+    "path" : "~/R Studio/Developing-Data-Products/server.r",
+    "project_path" : "server.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "shinyUI(pageWithSidebar(\n  headerPanel(\"Illustrating inputs\"),\n  sidebarPanel(\n    numericInput('id1', 'Numeric input, labeled id1', 0, min = 0, max = 10, step = 1),\n    checkboxGroupInput(\"id2\", \"Checkbox\",\n                       c(\"Value 1\" = \"1\",\n                         \"Value 2\" = \"2\",\n                         \"Value 3\" = \"3\")),\n    dateInput(\"date\", \"Date:\"),\n    h1('Sidebar panel'),\n    h1('H1 text'),\n    h2('H2 Text'),\n    h3('H3 Text'),\n    h4('H4 Text')\n  ),\n  mainPanel(\n    h3('Main Panel text'),\n    code('some code'),\n    p('some ordinary text'),\n    h3('Illustrating outputs'),\n    h4('You entered'),\n    verbatimTextOutput(\"oid1\"),\n    h4('You entered'),\n    verbatimTextOutput(\"oid2\"),\n    h4('You entered'),\n    verbatimTextOutput(\"odate\")\n  )\n))",
+    "created" : 1446860448084.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3785483121",
+    "id" : "1A8D33A4",
+    "lastKnownWriteTime" : 1446861171,
+    "path" : "~/R Studio/Developing-Data-Products/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
