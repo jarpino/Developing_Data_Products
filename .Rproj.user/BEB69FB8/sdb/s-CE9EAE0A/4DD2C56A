@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nlibrary(ISLR); library(ggplot2); library(caret);\nshinyServer(\n  function(input, output) {\n      output$ageWage <- renderPlot({\n        inputData <- data.frame(age = c(input$id1)\n                                , wage = c(input$wage/1000)\n                                , jobclass = c(input$jobclass)\n                                , education = c(input$education));\n        qplot(age,wage, data = Wage, shape = jobclass, colour = education)+geom_point(data = inputData, size = 10)\n      })\n  }\n)",
+    "created" : 1446860468444.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2579104077",
+    "id" : "4DD2C56A",
+    "lastKnownWriteTime" : 1447268297,
+    "path" : "~/R Studio/Developing-Data-Products/server.r",
+    "project_path" : "server.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "shinyUI(pageWithSidebar(\n  headerPanel(\"How much money should I be making?\"),\n  sidebarPanel(\n    h2('Your Information'),\n    numericInput('id1', 'Age', 30, min = 0, max = 90, step = 1),\n    numericInput('wage', 'Annual Salary', 50000, min = 0, max = 1000000, step = 1),\n    radioButtons(\"education\", \"Education:\",\n                 c(\"Less than HS Grad\" = \"1. < HS Grad\",\n                   \"HS Grad\" = \"2. HS Grad\",\n                   \"Some College\" = \"3. Some College\",\n                   \"College Grad\" = \"4. College Grad\",\n                   \"Advanced Degree\" = \"5. Advanced Degree\")),\n    radioButtons(\"jobclass\", \"Job Class:\",\n                 c(\"Industrial\" = \"1. Industrial\",\n                   \"Information\" = \"2. Information\"))\n  ),\n  mainPanel(\n    h2('What is going on here??'),\n    p('Do you live in the mid-atlantic region of the United States? Are you a male of working age? \n      Have you ever wanted to see how your salary compares to people with similar traits? If you \n      answered yes to those questions then this site is for you.'),\n    h3('How does this work?'),\n    p('Simple! Using the controls in the left panel select the criteria that you wish to filter on.\n      As you do, the diagrams and data below will update to show how you stand out in the pack!'),\n    plotOutput('ageWage'),\n    h3('So... how accurate is this?'),\n    p('Actually, this is not really that accurate. This does show you where your information sits\n      in the dataset, but the dataset is limited to just 3000 observations and is a few years old. \n      You can find out more about this dataset in the R ISLR package from the \n      book: Introduction to Statistical Learning.')\n  )\n))",
+    "created" : 1446860448084.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1089779672",
+    "id" : "1A8D33A4",
+    "lastKnownWriteTime" : 1447268259,
+    "path" : "~/R Studio/Developing-Data-Products/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
